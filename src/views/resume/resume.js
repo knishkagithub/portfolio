@@ -18,11 +18,18 @@ export default function Resume() {
     }
   };
 
-  const handleDownload = () => {
-    window.location.href =
-      "https://drive.google.com/uc?export=download&id=1vAJPgdS7Ka94EdaV3rcTqOk1Ky01_9jC";
-  };
+  // const handleDownload = () => {
+  //   window.location.href =
+  //     // "https://drive.google.com/uc?export=download&id=1vAJPgdS7Ka94EdaV3rcTqOk1Ky01_9jC";
+  //     // "https://drive.google.com/file/d/1_Gf5dC0s3XMVrhyA4x_-TOQysPvY_deE/view?usp=sharing";
+  //     // "https://drive.google.com/file/d/1_Gf5dC0s3XMVrhyA4x_-TOQysPvY_deE/view?usp=sharing";
+  //     "https://drive.google.com/uc?export=download&id=1_Gf5dC0s3XMVrhyA4x_-TOQysPvY_deE";
 
+  // };
+  const handleDownload = () => {
+    window.location.href = "https://drive.google.com/uc?export=download&id=1_Gf5dC0s3XMVrhyA4x_-TOQysPvY_deE";
+  };
+  
   return (
     <Box>
       <Navbar displayText={getActiveRoute(routes)} />
@@ -35,14 +42,23 @@ export default function Resume() {
             overflow="hidden"
             borderRadius="md"
           >
-            <iframe
+            {/* <iframe
               src="https://drive.google.com/file/d/1vAJPgdS7Ka94EdaV3rcTqOk1Ky01_9jC/preview"
               title="Resume"
               width="100%"
               height="100%"
               style={{ border: "5px solid" }}
               loading="lazy"
-            ></iframe>
+            ></iframe> */}
+            <iframe
+  src="https://drive.google.com/file/d/1_Gf5dC0s3XMVrhyA4x_-TOQysPvY_deE/preview"
+  title="Resume"
+  width="100%"
+  height="100%"
+  style={{ border: "5px solid" }}
+  loading="lazy"
+/>
+
           </Box>
         </Flex>
         <Flex justifyContent="center" alignItems="center" mt="20px">

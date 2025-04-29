@@ -49,7 +49,7 @@ export default function Footer() {
       >
         {" "}
         &copy; {1900 + new Date().getYear()}
-        {"</>"} with <AiFillHeart /> by Rahul Kumar Patro • All Rights Reserved
+        {"</>"} with <AiFillHeart /> by Kanishka Amritkar • All Rights Reserved
       </Text>
       <List display="flex">
         <ListItem
@@ -60,7 +60,7 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://github.com/Rahul1582" target="blank">
+          <Link href="https://github.com/knishkagithub" target="blank">
             <AiFillGithub />
           </Link>
         </ListItem>
@@ -72,9 +72,9 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://leetcode.com/rahul158_/" target="blank">
+          {/* <Link href="https://leetcode.com/rahul158_/" target="blank">
             <SiLeetcode />
-          </Link>
+          </Link> */}
         </ListItem>
         <ListItem
           me={{
@@ -84,7 +84,7 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://www.linkedin.com/in/rahulkp15/" target="blank">
+          <Link href="https://www.linkedin.com/in/kanishka-amritkar/" target="blank">
             <BiLogoLinkedin />
           </Link>
         </ListItem>
@@ -96,9 +96,9 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://www.instagram.com/_rahul_patro_/" target="blank">
+          {/* <Link href="https://www.instagram.com/_rahul_patro_/" target="blank">
             <BsInstagram />
-          </Link>
+          </Link> */}
         </ListItem>
       </List>
     </Flex>

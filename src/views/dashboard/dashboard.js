@@ -145,7 +145,7 @@ export default function Dashboard() {
                   >
                     This is{" "}
                     <Text display="inline-flex" color={highlightTextColor}>
-                      Rahul Kumar Patro
+                      Kanishka Amritkar
                     </Text>
                   </Text>
                   <Text

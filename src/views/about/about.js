@@ -1,3 +1,4 @@
+
 import { React, useState, useEffect } from "react";
 import {
   Box,
@@ -21,7 +22,6 @@ import { GiCricketBat } from "react-icons/gi";
 import Navbar from "../../components/Navbar/Navbar";
 import routes from "../../routes";
 import TechStackCard from "../../components/techStackCard/techStackCard";
-import AboutMeInfo from "../../components/aboutMeInfo/aboutMeInfo";
 import angular from "../../assets/icons/angular.svg";
 import typescript from "../../assets/icons/typescript.svg";
 import node from "../../assets/icons/nodejs.svg";
@@ -40,7 +40,7 @@ import postgres from "../../assets/icons/postgres.png";
 import rxjs from "../../assets/icons/rxjs.png";
 import azure from "../../assets/icons/azure.png";
 import bootstrap from "../../assets/icons/bootstrap.png";
-import myphoto from "../../assets/aboutMePhoto.jpg";
+import myphoto from "../../assets/kanishkaAboutMe.jpg";
 import GitHubCalendar from "react-github-calendar";
 
 export default function About() {
@@ -76,11 +76,6 @@ export default function About() {
           alignItems="center"
           mb="40px"
         >
-          {/* <TypeAnimation
-            sequence={["ABOUT ME", 500, "ABOUT", 500, "ABOUT ME", 500]}
-            style={{ fontSize: "3em" }}
-            cursor={false}
-          /> */}
           <Grid
             templateColumns={{
               base: "1fr",
@@ -108,7 +103,6 @@ export default function About() {
                 height="100%"
                 bg={textColorPrimary}
                 transform="rotate(4deg)"
-                // zIndex="-1"
               />
               <Skeleton
                 height="100%"
@@ -120,7 +114,7 @@ export default function About() {
                   src={myphoto}
                   width="100%"
                   height="100%"
-                  alt="Image Alt"
+                  alt="Profile"
                   effect="blur"
                   style={{ height: "100%" }}
                   onLoad={() => setloadedProfileimg(true)}
@@ -139,40 +133,55 @@ export default function About() {
                   mb="40px"
                   textAlign="center"
                 >
-                  {"<GENERAL INFORMATION/>"}
+                  {"<ABOUT ME/>"}
                 </Text>
-                <SimpleGrid columns="2" gap="20px">
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Current Organization"
-                    value="Truminds Software Systems"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Designation"
-                    value="Software Development Engineer - 1"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Location"
-                    value="Bengaluru, Karnataka"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Education"
-                    value="BIT Mesra, Ranchi"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Degree"
-                    value="Masters"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Languages"
-                    value="English, Hindi, Odia"
-                  />
-                </SimpleGrid>
+                {/* <Text
+                  color={textColorPrimary}
+                  fontSize="md"
+                  textAlign="justify"
+                  px="10px"
+                  lineHeight="1.9"
+                >
+                  Hello! I'm Kanishka, a Software Development Engineer at Truminds
+                  Software Systems based in Bengaluru. I hold a Master’s degree from
+                  BIT Mesra, Ranchi. I am deeply passionate about crafting clean,
+                  efficient, and scalable web applications, and I thrive in
+                  collaborative environments that challenge me technically and
+                  creatively. My journey in tech has been driven by curiosity and
+                  the desire to build products that make a difference. Outside of
+                  work, I enjoy exploring new places, playing music, and engaging
+                  in sports, all of which keep me energized and inspired in my
+                  personal and professional growth.
+                </Text> */}
+                <Text
+  color={textColorPrimary}
+  fontSize="md"
+  textAlign="justify"
+  px="10px"
+  lineHeight="1.9"
+>
+  I’m Kanishka Amritkar, a 3rd-year Computer Science student at SPIT, Mumbai. I'm a
+  passionate full-stack web developer with hands-on experience in React, Tailwind CSS,
+  Node.js, Flask, Next.js, Firebase, MongoDB, and MySQL. I'm deeply interested in the
+  evolving field of Generative AI and its applications.
+
+  Currently, I work as a full-stack developer at Triblet—our college startup—where I’ve
+  contributed to both frontend and backend using React and Firebase, and I'm actively
+  involved in deployment of our web application. I've also interned with Birlasoft (an MNC),
+  where I worked on React-based frontend, API routing, and multi-PDF upload features
+  using Multer.
+
+  I’ve won the AI in Microfinance competition with my project FIN.GPT—a tool that
+  performs KYC verification, AML detection, and ESG scoring using GenAI. I'm also
+  pursuing a major project on GenAI for education, aiming to make learning more
+  personalized and engaging.
+
+  Previously, I built a hospitality management system using LSTM models and collaborative
+  filtering, and I'm in the process of patenting our idea for a real-time attention detection
+  system. I also emerged as a winner in the National Entrepreneurship Challenge conducted
+  by IIT Bombay. I love building, scaling, and deploying meaningful tech—one project at a time.
+</Text>
+
               </Box>
             </Flex>
           </Grid>
@@ -253,13 +262,14 @@ export default function About() {
           </Skeleton>
         </Flex>
         <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Link href="https://github.com/Rahul1582" target="blank">
+          <Link href="https://github.com/knishkagithub" target="blank">
             <Button variant="darkBrand" fontSize="sm" fontFamily="DM Sans">
               Visit Github
             </Button>
           </Link>
         </Flex>
-        <Flex
+
+        {/* <Flex
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -269,8 +279,19 @@ export default function About() {
           <Text color={textColorPrimary} fontSize="2em" textAlign="center">
             {"<MY INTERESTS AND HOBBIES/>"}
           </Text>
-        </Flex>
-        <SimpleGrid
+        </Flex> */}
+        <Flex
+  direction="row"
+  justifyContent="center"
+  alignItems="center"
+  mb="40px"
+  mt="40px"
+>
+  <Text color={textColorPrimary} fontSize="2em" textAlign="center">
+    {"<MY ACHIEVEMENTS/>"}
+  </Text>
+</Flex>
+        {/* <SimpleGrid
           columns={{ base: 1, xl: 3, "2xl": 3 }}
           gap="20px"
           mb="20px"
@@ -289,11 +310,8 @@ export default function About() {
             <Text textAlign="center">Travelling & Exploring</Text>
             <Text color={textColorPrimary} textAlign="center" mt="5px">
               I am passionate about traveling and exploring new places. Whether
-              it's uncovering hidden gems in my own backyard or embarking on
-              exciting adventures, I thrive on the thrill of discovering new
-              cultures, cuisines, and landscapes. Traveling not only broadens my
-              horizons but also provides me with valuable life experiences and a
-              deep appreciation for the diversity of our world!!
+              it's uncovering hidden gems or embarking on exciting adventures,
+              I thrive on discovering new cultures, cuisines, and landscapes.
             </Text>
           </Box>
           <Box __css={styles}>
@@ -307,13 +325,8 @@ export default function About() {
             </Box>
             <Text textAlign="center">Playing Drums</Text>
             <Text color={textColorPrimary} textAlign="center" mt="5px">
-              I have a deep passion for playing the drums, which has been a
-              cherished hobby of mine for many years. The rhythmic beats and the
-              feeling of being in sync with the music provide me with a sense of
-              joy and creative expression that is truly unparalleled. Whether
-              it's jamming with friends, exploring new techniques, or simply
-              drumming to my favorite tunes, I find immense fulfillment and
-              relaxation in this musical pursuit!!
+              Playing drums gives me joy and helps me express myself creatively.
+              Whether it's jamming or learning new beats, it's a big part of my relaxation.
             </Text>
           </Box>
           <Box __css={styles}>
@@ -327,17 +340,50 @@ export default function About() {
             </Box>
             <Text textAlign="center">Playing Outdoor Games</Text>
             <Text color={textColorPrimary} textAlign="center" mt="5px">
-              Whether it's a competitive game of soccer, a relaxing round of
-              golf, or simply throwing a frisbee in the park, I find immense joy
-              and fulfillment in the great outdoors. Playing sports not only
-              keeps me physically active but also fosters teamwork, leadership,
-              and a strong sense of camaraderie. It's a wonderful way for me to
-              unwind, stay fit, and connect with friends and family while
-              enjoying the beauty of nature!!
+              I love sports like cricket and football. Outdoor games keep me active and
+              help me build strong connections with friends and teammates.
             </Text>
           </Box>
-        </SimpleGrid>
+        </SimpleGrid> */}
+        <SimpleGrid
+  columns={{ base: 1, xl: 3 }}
+  gap="20px"
+  mb="20px"
+  align={{ base: "center", xl: "center" }}
+  justify={{ base: "center", xl: "center" }}
+>
+  <Box __css={styles}>
+    <Text fontSize="xl" fontWeight="bold" textAlign="center" mb="10px">
+      🏆 AI in Microfinance Winner
+    </Text>
+    <Text color={textColorPrimary} textAlign="center">
+      Built <strong>FIN.GPT</strong>, a GenAI platform for KYC verification,
+      AML detection, and ESG scoring. Recognized for real-world financial innovation.
+    </Text>
+  </Box>
+
+  <Box __css={styles}>
+    <Text fontSize="xl" fontWeight="bold" textAlign="center" mb="10px">
+      📄 Patent Work in Progress
+    </Text>
+    <Text color={textColorPrimary} textAlign="center">
+      Co-inventor of a <strong>Real-Time Attention Detection System</strong> for
+      EdTech surveillance using eye-tracking and GenAI techniques.
+    </Text>
+  </Box>
+
+  <Box __css={styles}>
+    <Text fontSize="xl" fontWeight="bold" textAlign="center" mb="10px">
+      🥇 Winner: IIT Bombay NEC
+    </Text>
+    <Text color={textColorPrimary} textAlign="center">
+      National Entrepreneurship Challenge winner. Built tech-enabled solutions under pressure,
+      collaborated with peers, and led innovative contributions.
+    </Text>
+  </Box>
+</SimpleGrid>
       </Box>
     </Box>
   );
 }
+
